@@ -58,7 +58,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
         public TextView tvharga;
 
         public MenuViewHolder(@NonNull View itemView) {
-            super(itemView);
+                super(itemView);
             ivgambar = itemView.findViewById(R.id.iv_gambar);
             tvnama = itemView.findViewById(R.id.tv_nama);
             tvharga = itemView.findViewById(R.id.tv_harga);

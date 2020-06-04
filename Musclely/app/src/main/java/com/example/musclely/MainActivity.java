@@ -48,14 +48,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onResponse(JSONArray response) {
                         jumdata = response.length();
                         try {
-                            for (int i = 0; i < jumdata; i++) {
+                            for (int i=0; i<jumdata; i++) {
                                 JSONObject data = response.getJSONObject(i);
-                                String gambarmenu = data.getString("gambar");
-                                String namamenu = data.getString("nama");
-                                String hargamenu = data.getString("harga");
+                                String gambarmenu = data.getString("Gambar");
+                                String namamenu = data.getString("Nama");
+                                String hargamenu = data.getString("Harga");
                                 menus.add(new Menu(namamenu, hargamenu, gambarmenu));
                             }
-                            menuAdapter = new MenuAdapter(MainActivity.this, menus);
+                            menuAdapter = new MenuAdapter(MainActivity.this,menus);
                             recyclerView.setAdapter(menuAdapter);
                         } catch (JSONException e) {
                             e.printStackTrace();
