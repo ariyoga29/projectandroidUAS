@@ -5,7 +5,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.DownloadManager;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -53,7 +56,9 @@ public class MainActivity extends AppCompatActivity {
                                 String gambarmenu = data.getString("Gambar");
                                 String namamenu = data.getString("Nama");
                                 String hargamenu = data.getString("Harga");
-                                menus.add(new Menu(namamenu, hargamenu, gambarmenu));
+                                String deskripsimenu = data.getString("Deskripsi");
+                                String coretmenu = data.getString("Coret");
+                                menus.add(new Menu(namamenu, hargamenu, gambarmenu, deskripsimenu, coretmenu));
                             }
                             menuAdapter = new MenuAdapter(MainActivity.this,menus);
                             recyclerView.setAdapter(menuAdapter);

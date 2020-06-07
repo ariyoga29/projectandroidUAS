@@ -20,8 +20,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_nama"
-            android:textSize="20sp"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
             android:text="Nama"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_coret"
+            android:textSize="16sp"
+            android:text="Coret"
+            android:textColor="@android:color/holo_red_dark"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,7 +42,9 @@
             android:layout_height="wrap_content"
             android:text="Pesan"
             android:id="@+id/btn_pesan"
-            android:textSize="20sp"/>
+            android:textSize="16sp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/black"/>
 
     </LinearLayout>
 
