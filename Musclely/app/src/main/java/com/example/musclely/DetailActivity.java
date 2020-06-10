@@ -36,6 +36,7 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         tvcoret = findViewById(R.id.tv_coret);
 
         Button btnMain = findViewById(R.id.btn_kembali);
+        Button btnBeli = findViewById(R.id.btn_beli);
 
         String simpanama = getIntent().getStringExtra(nama);
         String simpandeskripsi = getIntent().getStringExtra(deskripsi);
@@ -54,12 +55,21 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
                 .into(ivgambar);
 
         btnMain.setOnClickListener(this);
+        btnBeli.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        Intent pindahMain = new Intent(DetailActivity.this, MainActivity.class);
-        startActivity(pindahMain);
+        switch (v.getId()) {
+            case R.id.btn_kembali:
+                Intent pindahMain = new Intent(DetailActivity.this, MainActivity.class);
+                startActivity(pindahMain);
+                break;
+            case R.id.btn_beli:
+                Intent pindahBeli = new Intent(DetailActivity.this, BeliActivity.class);
+                startActivity(pindahBeli);
+                break;
+        }
     }
 }
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".BayarActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginBottom="320dp"
+        android:text="Terima kasih telah berbelanja bersama kami.\nSilahkan melakukan checkout terlebih dahulu sehingga kami dapat melanjutkan proses pengiriman."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/btn_kembali"
+        android:textSize="16sp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

@@ -120,8 +120,8 @@
             android:text="Beli"
             android:id="@+id/btn_beli"
             android:textSize="16sp"
-            android:background="@android:color/darker_gray"
-            android:textColor="@android:color/black"/>
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"/>
 
         <Button
             android:layout_width="match_parent"
@@ -132,7 +132,7 @@
             android:text="Kembali ke Menu"
             android:id="@+id/btn_kembali"
             android:textSize="16sp"
-            android:background="@android:color/holo_red_light"
-            android:textColor="@android:color/black"/>
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"/>
     </LinearLayout>
 </ScrollView>
